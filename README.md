@@ -1,10 +1,10 @@
-**# absent-email**
+# absent-email
 
 欠席者を連絡する．
 
 
 
-**## 使い方**
+## 使い方
 
 uwsgiとnginxで動かします．
 
@@ -12,11 +12,15 @@ uwsgiとnginxで動かします．
 
 app.py:
     \${smtpserver}: SMTPサーバのドメイン名 ex: smtp.example.com
-	\${mailserver_domain}: メールのドメイン名 ex: example.com
-	\${username}: SMTPサーバのユーザ名
-        ※ ユーザ名がドメイン名を含む形 ex: user@example.com のような形の場合，
-        106,122,163行目の\${mailserver_domail}の消去が必要．
-    ${password}: SMTPサーバのパスワード
+
+​	\${mailserver_domain}: メールのドメイン名 ex: example.com
+
+​	\${username}: SMTPサーバのユーザ名
+
+​        ※ ユーザ名がドメイン名を含む形 ex: user@example.com のような形の場合，
+​        106,122,163行目の\${mailserver_domail}の消去が必要．
+
+​    ${password}: SMTPサーバのパスワード
 
 
 
