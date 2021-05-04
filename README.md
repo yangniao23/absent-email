@@ -10,36 +10,35 @@ uwsgiとnginxで動かします．
 
 
 
-app.py:
+#### app.py:
     \${smtpserver}: SMTPサーバのドメイン名 ex: smtp.example.com
 
 ​	\${mailserver_domain}: メールのドメイン名 ex: example.com
 
-​	\${username}: SMTPサーバのユーザ名
-
-​        ※ ユーザ名がドメイン名を含む形 ex: user@example.com のような形の場合，
+​	\${username}: SMTPサーバのユーザ名  
+​        ※ ユーザ名がドメイン名を含む形 ex: user@example.com のような形の場合，  
 ​        106,122,163行目の\${mailserver_domail}の消去が必要．
 
 ​    ${password}: SMTPサーバのパスワード
 
 
 
-namelist.json:
+#### namelist.json:
     適当に書き換えてください．
 
 
 
-absent-email.service:
+#### absent-email.service:
     ユーザ名，パスあたりを適当に書き換えてください．
 
 
 
-myapp.ini:
+#### myapp.ini:
     chdirを適当に書き換えてください．
 
 
 
-nginx/:
+##### nginx/:
     ${domain}: ドメイン名 ex: example.com
 
 
