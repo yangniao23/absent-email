@@ -172,7 +172,7 @@ def post_app():
         return jsonify(result), 401
     
     for num in numlist:
-        if num not in range(1,43):
+        if num not in range(1,${classmembernum}):
             result = {
             "status":"400",
             "about":"wrong number."
