@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Ec2 欠席者報告</title>
+        <meta http-equiv="content-type" charset="UTF-8">
+		<meta name="viewport"
+   			content="width=320,
+      		height=480,
+      		initial-scale=1.0,
+      		minimum-scale=1.0,
+      		maximum-scale=2.0,
+      		user-scalable=yes" />
+    </head>
+    <body>
+      <h1 id="title">欠席者報告フォーム</h1>
+      <p>{{ login_name }} 
+        <form action="/logout" method="GET">
+          <button>ログアウト</button>
+        </form>
+      </p>
+      
+      <table>
+        <thead>
+          <tr>
+            <th>欠席</th>
+            <th>番号</th>
+             <th>名前</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="checkbox" class="isabsent" name="isabsent" value="1"></td>
+            <td>1</td>
+            <td>ジョン</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" class="isabsent" name="isabsent" value="2"></td>
+            <td>2</td>
+            <td>タイター</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" class="isabsent" name="isabsent" value="3"></td>
+            <td>3</td>
+            <td>時間遡行者</td>
+          </tr>
+        </tbody>
+        </table>
+		<input type="submit" class='exec' value="送信する">
+		</body>
+		<link rel="stylesheet" type="text/css" href="static/style.css">
+		<script src="static/script.js"></script>
+    </body>
+</html>

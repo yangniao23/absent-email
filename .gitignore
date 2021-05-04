@@ -1,0 +1,4 @@
+namelist.json
+.env
+__pycache__/
+.vscode/

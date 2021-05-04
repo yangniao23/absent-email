@@ -1,0 +1,15 @@
+[Unit]
+Description=Python Daemon With Pipenv
+After=network.target
+Requires=nginx.service
+
+[Service]
+Type=simple
+Restart=always
+WorkingDirectory=/home/user/absent-email
+ExecStart=/home/user/.local/bin/pipenv run uwsgi --ini myapp.ini
+User=user
+Group=user
+
+[Install]
+WantedBy=multi-user.target
